@@ -110,6 +110,9 @@ img {
 #all:hover {
   color: rgb(23, 23, 36);
 }
+.project-title:hover {
+  color: rgb(23, 23, 36);
+}
 #contact {
   display: flex;
   flex-direction: column;

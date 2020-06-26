@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+  
+  </head>
+  
+  <body>
+    
+    <div class="container">
+      <div class="header">
+        <h1 id="title">MANTI</h1>
+        <p id="description">Gerçekten mantı sever misin? Hadi bulalım!</p>
+      </div>
+      <form id="survey-form" action="">
+        <div class="form-group">
+          <label for="name" id="name-label">İsim</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="İsiminizi giriniz"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email" id="email-label">E-posta</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="E-posta giriniz"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="number" id="number-label">Yaş (seçmeli)</label>
+          <input
+            type="number"
+            name="number"
+            id="number"
+            class="form-control"
+            placeholder="Yaş"
+            min="0"
+            
+          />
+        </div>
+       
+        <div class="form-group">
+          <p>Ne sıklıkla Mantı yiyorsunuz?</p>
+          <div class="recs"><input class="rd" checked="checked" type="radio" name="user-recommend" id="rd1" value="every-day" />
+          <label class="inline-lable" for="rd1">Her gün</label></div>
+          <!-- <label class="sample">
+            <input
+              name="user-recommend"
+              value="definitely"
+              type="radio"
+              class="input-radio"
+              checked=""
+            />Definitely</label
+          > -->
+       <div class="recs"> <input class="rd"  type="radio" name="user-recommend" id="rd2" value="sometimes" />
+        <label class="inline-lable" for="rd2">Bazen</label></div>
+        <div class="recs"> <input class="rd" type="radio" name="user-recommend" id="rd3" value="once" />
+          <label class="inline-lable" for="rd3">Sadece bir kez denedim</label></div>
+        
+        <div class="form-group">
+          <div class="recs"> <input class="rd" type="radio" name="user-recommend" id="rd4" value="never" />
+            <label class="inline-lable" for="rd4">Asla</label></div>
+        </div>
+        <div class="form-group">
+          <p>En sevdiğiniz mantı türü nedir?</p>
+          <select
+            id="most-like"
+            name="mostLike"
+            class="form-control"
+            required=""
+          >
+            <option disabled="" selected="" value="">Bir seçenek belirleyiniz</option>
+            <option value="Islak">Islak</option>
+            <option value="Soslu">Soslu</option>
+            <option value="Kuru">Kuru</option>
+            <option value="Kırmızı soslu">Kırmızı soslu</Source></option>
+          </select>
+          <div class="form-group">
+            <p>Nerede mantı yemeyi tercih edersin? <span id="small">(geçerli olanların tümünü seçin)</span></p>
+            <!-- <label><input name="user-projects" value="Front-end-projects" type="checkbox" class="input-checkbox" checked="" />Front-end Projects</label> -->
+            <div class="recs"> <input checked=""  class="rd2" type="checkbox" name="user-projects" id="ch1" value="lokanta" />
+              <label class="inline-lable" for="ch1">Lokanta</label></div>
+              <div class="recs"> <input  class="rd2" type="checkbox" name="user-projects" id="ch2"
+                  value="mantici" />
+                <label class="inline-lable" for="ch2">Mantıcı</label></div>
+                <div class="recs"> <input class="rd2" type="checkbox" name="user-projects" id="ch3" value="cafe" />
+                  <label class="inline-lable" for="ch3">Kafe</label></div>
+        
+          <div class="recs"> <input class="rd2" type="checkbox" name="user-projects" id="ch4" value="home" />
+            <label class="inline-lable" for="ch4">Ev</label></div>
+         
+      <div class="recs"> <input class="rd2" type="checkbox" name="user-projects" id="ch5" value="outside" />
+      <label class="inline-lable" for="ch5">Dışarıda</label></div> 
+
+        
+            
+          </div>
+          <div class="form-group">
+            <p>Herhangi bir yorum veya öneriniz var mı?</p>
+            <textarea id="comments" placeholder="Yorumumuz buraya giriniz" name="comment" class="input-textarea" id="" cols="30" rows="10"></textarea>
+          </div>
+          <div class="form-group">
+            <button class="submit-button" id="submit" type="submit">Gönder</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

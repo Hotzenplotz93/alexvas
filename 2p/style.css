@@ -1,0 +1,184 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+
+  background-image: linear-gradient(
+      115deg,
+      rgba(255, 255, 255, 0.438),
+      rgba(231, 231, 229, 0.342)
+    ),
+    url(./manti2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#small {
+  font-size: 0.8rem;
+}
+
+label {
+  display: block;
+}
+.container {
+  width: 50%;
+  margin: 20px auto;
+  background-color: rgba(37, 37, 37, 0.7);
+  padding: 30px;
+  border-radius: 20px;
+  color: white;
+}
+#survey-form {
+  padding: 20px;
+  font-size: 1.2rem;
+}
+
+.header {
+  text-align: center;
+  font-family: "Sriracha", cursive;
+  font-size: 2rem;
+}
+.header > p {
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+.header > h1 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 2.5em;
+}
+#name {
+  width: 100%;
+  padding: 7px;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding-left: 8px;
+}
+#email {
+  width: 100%;
+  padding: 7px;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding-left: 8px;
+}
+#number {
+  width: 100%;
+  padding: 7px;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-left: 8px;
+}
+#dropdown {
+  width: 102%;
+  padding: 7px;
+  padding-left: 8px;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  border: none;
+  color: grey;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+#most-like {
+  width: 102%;
+  padding: 7px;
+  padding-left: 8px;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  border: none;
+  color: grey;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+.form-group {
+  font-size: 1.3rem;
+}
+#comments {
+  width: 100%;
+  min-height: 100px;
+  font-size: 1.3rem;
+  outline: none;
+}
+#submit {
+  width: 100%;
+  border: none;
+  background: rgb(117, 117, 117, 0.6);
+  padding: 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 30px;
+  color: white;
+  border-radius: 5px;
+}
+.input-radio,
+.input-checkbox {
+  display: inline-block;
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+
+.inline-lable {
+  display: inline;
+}
+
+.rd {
+  min-height: 1.3rem;
+  min-width: 1.3rem;
+  margin-top: -5px;
+  vertical-align: middle;
+  margin-left: -5px;
+}
+.recs {
+  margin: 4px;
+}
+
+.rd2 {
+  min-height: 1.3rem;
+  min-width: 1.3rem;
+  margin-top: -2px;
+  vertical-align: middle;
+  margin-left: -5px;
+}
+@media (max-width: 1100px) {
+  .container {
+    width: 80%;
+  }
+}
+@media (max-width: 600px) {
+  .header {
+    font-size: 1.5rem;
+  }
+  .header p {
+    margin-top: 0;
+  }
+
+  .header h1 {
+    margin-bottom: 0;
+    margin-bottom: 0;
+  }
+}
+#submit:hover {
+  background-color: rgba(37, 37, 37, 0.5);
+}
